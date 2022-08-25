@@ -31,6 +31,7 @@
           :class="nsUpload.be('list', 'item-thumbnail')"
           :src="file.url"
           alt=""
+          @click.prevent="handleClick(file)"
         />
         <div
           v-if="
